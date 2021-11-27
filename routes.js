@@ -129,7 +129,7 @@ export default class Routes {
     }
 
     _getHour(hour, minutes) {
-        let hourToMinutes = ((hour * 60) + minutes)/60);
+        let hourToMinutes = ((hour * 60) + minutes)/60;
         let totalHours = Math.trunc(hourToMinutes);
         let lessMinutes = Math.round((hourToMinutes - totalHours)*60);
 
