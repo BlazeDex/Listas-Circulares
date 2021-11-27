@@ -82,7 +82,7 @@ export default class Routes {
         let base = this._start;
 
         if(!base) {
-            txt = 'No hay ninguna base registrada.'
+            txt = 'No hay ninguna base registrada.';
             return txt;
         } else {
             do {
@@ -99,7 +99,7 @@ export default class Routes {
         let find = this._searchBase(bases);
 
         if(!find) {
-            return null;;
+            return null;
         } else {
             while(minutes >= 0) {
                 card += find.cardInfo(this._getHour(hour, minHour), minutes) + '\n' + '------------------------------';               
